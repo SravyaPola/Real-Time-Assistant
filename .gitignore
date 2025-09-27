@@ -1,0 +1,80 @@
+# --- OS / Misc ---
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Keep lockfiles committed
+# !package-lock.json
+# !pnpm-lock.yaml
+# !yarn.lock
+
+# --- TypeScript / Builds ---
+*.tsbuildinfo
+dist/
+build/
+.tmp/
+.temp/
+
+# --- Monorepo package builds/caches ---
+packages/**/dist/
+packages/**/build/
+packages/**/.cache/
+
+# --- Vite (frontend) ---
+.vite/
+packages/frontend/.vite/
+packages/frontend/dist/
+
+# --- Env / Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Logs / PIDs ---
+logs
+*.log
+*.log.*
+log/
+pids
+*.pid
+*.pid.lock
+*.seed
+
+# --- Coverage / Reports ---
+coverage/
+.nyc_output/
+report/
+reports/
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.iml
+
+# --- Docker / Local overrides ---
+docker-compose.override.yml
+.env.docker
+
+# --- Temp files ---
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+# --- App-specific temps (audio/uploads) ---
+*.webm
+*.wav
+*.mp3
+
+# --- DB dumps ---
+*.sql
+*.dump
